@@ -1,0 +1,363 @@
+/* Основні стилі для тіла */
+body {
+  font-family: "Lora", serif; /* Зміна шрифту на Lora, який гарно відображає українську */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Загальні стилі для контейнерів */
+.untitled-page1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------------- HEADER -------------------- */
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #333;
+}
+
+.headerLogo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff69b4 !important; /* Рожевий колір для логотипу */
+}
+
+.headerNav {
+  display: flex;
+  gap: 20px;
+}
+
+.headerNav a {
+  color: #ff69b4 !important; /* Рожевий колір для навігаційних посилань */
+  text-decoration: none;
+}
+
+.nav-link{
+  color: #ff69b4
+}
+
+/* -------------------- MAIN CONTENT -------------------- */
+.mainContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.mainContent h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ff69b4 !important; /* Рожевий колір для заголовків */
+  text-align: center;
+}
+
+.mainContent p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Спеціальні стилі для зазначених рядків */
+.heroTitle {
+  color: #ff69b4 !important; /* Рожевий колір для виділених рядків */
+  font-weight: 700;
+}
+
+.subtitle3{
+  color: #ff69b4
+}
+.btn-primary {
+  background-color: #ff69b4; /* Блакитний колір фону для першої кнопки */
+  color: #000; /* Рожевий колір тексту для першої кнопки */
+  border: #ff69b4
+}
+
+.btn-secondary {
+  background-color: #ff69b4; /* Сірий колір фону для другої кнопки */
+  color: #000000; /* Рожевий колір тексту для другої кнопки */
+  border: #ff69b4
+}
+
+.btn-outline-primary{
+  color: #ff69b4;
+  border: #ff69b4
+}
+.hero_title22{
+  color: #ff69b4;
+}
+/* -------------------- FOOTER -------------------- */
+.footerContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 179px auto 20px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+@media (max-width: 991px) {
+  .footerContent {
+    margin: 150px auto 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footerContent {
+    margin: 80px auto 20px;
+  }
+}
+
+@media (max-width: 383px) {
+  .footerContent {
+    margin: 50px auto 20px;
+  }
+}
+
+.footerHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.footerTitle1,
+.footerTitle2 {
+  position: relative;
+  font: 700 54px/1.1 "Lora", serif;
+}
+
+.footerTitle1 {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.footerTitle2 {
+  color: #ff69b4 !important; /* Рожевий колір для заголовків */
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 991px) {
+  .footerTitle1,
+  .footerTitle2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 479px) {
+  .footerTitle1,
+  .footerTitle2 {
+    font-size: 36px;
+  }
+}
+
+.footerMain {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 95px 0 0;
+}
+
+@media (max-width: 575px) {
+  .footerMain {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 80px 0 0;
+  }
+}
+
+@media (max-width: 383px) {
+  .footerMain {
+    margin: 50px 0 0;
+  }
+}
+
+.footerAddress,
+.footerContactGroup,
+.footerLinks1,
+.footerLinks2,
+.footerLinks3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 3px 0 33px;
+  width: 100%;
+  max-width: 307px;
+}
+
+.footerAddressImage {
+  position: relative;
+  width: 203px;
+  max-width: 85%;
+  object-fit: cover;
+}
+
+.footerAddressText,
+.footerContactEmail {
+  position: relative;
+  font: 400 16px/1.75 "Lora", serif;
+  color: #666666;
+  text-align: center;
+}
+
+.footerContactIcon {
+  position: absolute;
+  top: 50%;
+  left: -36px;
+  width: 30px;
+  height: 21px;
+  transform: translate(0, -50%);
+}
+
+.footerLinksGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 98px;
+}
+
+@media (max-width: 575px) {
+  .footerLinksGroup {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 383px) {
+  .footerLinksGroup {
+    gap: 50px;
+  }
+}
+
+.footerLinkAbout,
+.footerLinkContact,
+.footerLinkDribbble,
+.footerLinkServices,
+.footerLinkInstagram,
+.footerLinkBlog,
+.footerLinkExperience,
+.footerLinkProjects,
+.footerLinkTwitter {
+  position: relative;
+  font: 700 18px/1 "Lora", serif;
+  color: #ff69b4 !important; /* Рожевий колір для посилань у футері */
+  margin: 0 16px 0 0;
+}
+
+@media (max-width: 991px) {
+  .footerLinkAbout,
+  .footerLinkContact,
+  .footerLinkDribbble,
+  .footerLinkServices,
+  .footerLinkInstagram,
+  .footerLinkBlog,
+  .footerLinkExperience,
+  .footerLinkProjects,
+  .footerLinkTwitter {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 383px) {
+  .footerLinkAbout,
+  .footerLinkServices,
+  .footerLinkProjects,
+  .footerLinkTwitter {
+    margin: 0 8px 0 0;
+  }
+}
+
+.footerBottomRow {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  margin: 122px 0 0;
+}
+
+@media (max-width: 1399px) {
+  .footerBottomRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footerBottomRow {
+    margin: 80px 0 0;
+  }
+}
+
+@media (max-width: 383px) {
+  .footerBottomRow {
+    margin: 50px 0 0;
+  }
+}
+
+.footerBottomText1,
+.footerBottomAuthor,
+.footerBottomPoweredByText,
+.footerBottomPlatform,
+.footerBottomSeparator1,
+.footerBottomLicense,
+.footerBottomSeparator2,
+.footerBottomInstructions,
+.footerBottomSeparator3,
+.footerBottomChangelog,
+.footerBottomSeparator4,
+.footerBottomStyleGuide {
+  position: relative;
+  font: 400 16px/1.39 "Lora", serif;
+  color: #8a95ad;
+  margin: 1px 0;
+  text-align: center;
+}
+
+@media (max-width: 1399px) {
+  .footerBottomText1,
+  .footerBottomAuthor,
+  .footerBottomPoweredByText,
+  .footerBottomPlatform,
+  .footerBottomSeparator1,
+  .footerBottomLicense,
+  .footerBottomSeparator2,
+  .footerBottomInstructions,
+  .footerBottomSeparator3,
+  .footerBottomChangelog,
+  .footerBottomSeparator4,
+  .footerBottomStyleGuide {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footerBottomText1,
+  .footerBottomAuthor,
+  .footerBottomPoweredByText,
+  .footerBottomPlatform,
+  .footerBottomSeparator1,
+  .footerBottomLicense,
+  .footerBottomSeparator2,
+  .footerBottomInstructions,
+  .footerBottomSeparator3,
+  .footerBottomChangelog,
+  .footerBottomSeparator4,
+  .footerBottomStyleGuide {
+    font-size: 12px;
+  }
+}
